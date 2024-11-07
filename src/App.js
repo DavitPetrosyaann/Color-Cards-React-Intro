@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import RandomColorsGeneration from "./components/RandomColorsGeneration/RandomColorsGeneration.jsx";
+import H1ForColors from "./components/H1-for-colors/H1-for-colors.jsx";
+import Probability from "./components/Probability/Probability.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <H1ForColors />
+      <RandomColorsGeneration />
+      <Probability />
     </div>
   );
 }
